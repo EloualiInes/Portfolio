@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inès El Ouali</title>
+        <link rel="stylesheet" href="design/style.css">
+        
+
+    </head>
+    <body>
+        <div class="cover" id="Accueil">
+            <nav>
+                <div class="container_navigation">
+                    <img src="pictures/nom.png" class="logo" alt="">
+                    <div id = "navigation">
+                        <a class="btn_nav" href="#Accueil" class="">Accueil</a>
+                        <a class="btn_nav" href="#A_mon_propos">À propos de moi</a>
+                        <a class="btn_nav" href="#competences" >Compétences</a>
+                        <a class="btn_nav" href="#Portfolio">Portfolio</a>
+                        <a class="btn_nav" href="#contact">Contact</a>
+                    </div>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
+                    <div class="navigationMobile">
+                        <a href="#Accueil" class="btn_nav">Accueil</a>
+                        <a href="#A_mon_propos" class="btn_nav">À propos de moi</a>
+                        <a href="#competences" class="btn_nav">Compétences</a>
+                        <a href="#Portfolio" class="btn_nav">Portfolio</a>
+                        <a href="#contact" class="btn_nav">Contact</a>
+                    </div>
+                </div>
+                
+            </nav>
+            <div id="container_cover">
+                <!-- Englobe le cover -->
+                <div class="center">
+                    <div class="container_titres"> 
+                        <h1>El Ouali Inès</h1>
+                        <h2>Étudiante en Informatique</h2>
+                    </div>
+                </div>
+
+                <div class="fleche">
+                    <a href="#A_mon_propos"><img src="pictures/fleche.png" alt="fleche pour descendre"></a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- A MON PROPOS -->
+        <div id="A_mon_propos" class="backgroundGris part">
+
+            <div class="div_titre">
+                <h2 class="titre" id="titre_a_propos">À propos de moi</h2>
+                <div class="soulignement blanc"></div>
+            </div>
+
+            <div class="container_presentation">
+                <div id="presentation_complete">
+
+                    <div>
+                        <img id="photo-moi" src="pictures/photoMoi.jpg" alt="Une photo de moi" /> 
+                    </div>
+    
+                    <div id="texte"> 
+                        <p>Je m'appelle Inès El Ouali. J'ai 21 ans et 
+                        je suis étudiante en informatique en licence ..  à .
+    </br>Je suis une passionnée d'informatique, de jeux vidéos, de cinéma, de mangas et de voyages. 
+    </br>Ce que j'aime le plus dans l'informatique c'est le fait de pouvoir voir son idée prendre forme tout en résolvant pleins de petits problèmes.
+    </br>Pour moi, cela se conclue par une grande satisfaction.
+    </br>J'aimerais pouvoir être programmeuse informatique du coté back-end. Beaucoup de langages me plaisent.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button id="btnCV"><a href="ressources/CV.pdf" download="CV.pdf">Télécharger mon cv</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- COMPETENCE -->
+        <!-- mettre les bars en column -->
+        <div id="competences" class="backgroundBlanc part">
+            <div class="div_titre" >
+                <h2 class="titre" id="titre_competences">Compétences</h2>
+                <div class="soulignement"></div>
+            </div>
+
+            <div id="div_competences">
+                <div class="langages_competence">
+                    <p>HTML</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "90"><p>90%</p></div>
+                    </div>
+
+                </div>
+
+                <div class="langages_competence">
+                    <p>CSS</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "60"><p>60%</p></div>
+                    </div>
+
+                </div>
+
+                <div class="langages_competence">
+                    <p>Javascript</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "40"><p>40%</p></div>
+                    </div>
+
+                </div>
+
+                <div class="langages_competence">
+                    <p>Java</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "60"><p>60%</p></div>
+                    </div>
+                </div>
+
+                <div class="langages_competence">
+                    <p>C</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "40"><p>40%</p></div>
+                    </div>
+
+                </div>
+
+                <div class="langages_competence">
+                    <p>PHP</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "70"><p>70%</p></div>
+                    </div>
+
+                </div>
+
+                <div class="langages_competence">
+                    <p>SQL</p>
+                    <div class="progress">
+                    <div class="progress-value" data-done= "30"><p>30%</p></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- PORTFOLIO -->
+        
+        <div id="Portfolio" class="backgroundGris part">
+            <div class="div_titre">
+                <h2 class="titre" id= "titre_portfolio">Mon portfolio</h2>
+                <div class="soulignement blanc"></div>
+            </div>
+            <p>Pour plus de renseignements, cliquez sur les différents projets effectués : </p>
+            <div id="liste_projets">
+
+                <div class="projets backgroundBlanc" data-modal = "modal1">
+                    <h3>Portfolio</h3>
+                    <img src="pictures/CaptureProjet1_small.png" alt="aperçu projet" class="img_projets" background-color="red">
+                </div>
+
+                <div class="modal" id="modal1">
+                    <div class="modal_contenu backgroundGris">
+                        
+                        <div class="div_titre" >
+                            <h2 class="titre">Portfolio</h2>
+                            <div class="soulignement gris"></div>
+                        </div>
+                        <p class="texte">
+                            J'ai réalisé ce portfolio dans le but de présenter mes projets actuels et futurs. <br>
+                            Etant mon propre client, je voulais un design simple allant à l'essentiel. <br><br>
+                            <span class="souligner">Technologie utilisées</span>  : HTML, CSS, Javascript
+                        </p>
+                        <img src="pictures/CaptureProjet1.png" alt="" class="capture_projet">
+                        <p class="modal__close">&times;</p>
+                    </div>
+                </div>
+
+                <div class="projets backgroundBlanc" data-modal = "modal2">
+                    <h3>Blog : Noobies</h3>
+                    <p>En construction</p>
+                </div>
+
+                <div class="modal" id="modal2">
+                    <div class="modal_contenu backgroundGris">
+                        
+                        <div class="div_titre" >
+                            <h2 class="titre">Noobies</h2>
+                            <div class="soulignement gris"></div>
+                        </div>
+                        <p class="texte">
+                Ce projet a pour but de réunir différents joueurs dans une communauté, afin qu'ils partagent leur passion, leurs jeux ...
+                Sa réalisation est personnelle et est purement dans l'amusement personnel.
+                <span class="souligner">Technologie utilisées</span>  : HTML, CSS, PHP, Javascript, SQL
+            </p>
+            <p>
+                Image indisponible pour le moment. <br>
+                Projet en cours de réalisation.
+            </p>
+                        <p class="modal__close">&times;</p>
+                    </div>
+                </div>
+
+                <a class="projets backgroundBlanc" href="view/portfolio.html">
+                    <h3>Petits projets rapides</h3>
+                    <p>Plusieurs projets</p>
+                </a>
+                
+
+            </div>
+        </div>
+
+        <!-- FOOTER CONTACT ! -->
+
+        <footer class="backgroundBlanc part">
+            <div id="contact">
+                <div class="div_titre">
+                    <h2 class="titre" id= "titre_contact">Contact</h2>
+                    <div class="soulignement"></div>
+                </div>
+                <p>Vous pouvez me contacter via :</p>
+                <div class="container_button">
+                    <div class="box box1">
+                        <img src="pictures/email.png" alt="logo email">
+                        <p><a href="mailto:ineselouali@sfr.fr">E-mail</a></p>
+                    </div>
+                    <div class="box box2">
+                        <img src="pictures/phone-call.png" alt="logo phone">
+                        <p><a href="tel:+33636468957"></a>Portable</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        <script src="javascript/app.js"></script>
+    </body>
+</html>
