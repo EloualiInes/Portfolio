@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inès El Ouali</title>
         <link rel="stylesheet" href="design/style.css">
-        
-
     </head>
     <body>
+
+        <!-- Page de couverture -->
         <div class="cover" id="Accueil">
             <nav>
                 <div class="container_navigation">
-                    <img src="pictures/nom.png" class="logo" alt="">
+                    <img src="pictures/icons/nom.png" class="logo" alt="logo">
                     <div id = "navigation">
-                        <a class="btn_nav" href="#Accueil" class="">Accueil</a>
+                        <a class="btn_nav" href="#Accueil">Accueil</a>
                         <a class="btn_nav" href="#A_mon_propos">À propos de moi</a>
                         <a class="btn_nav" href="#competences" >Compétences</a>
                         <a class="btn_nav" href="#Portfolio">Portfolio</a>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="fleche">
-                    <a href="#A_mon_propos"><img src="pictures/fleche.png" alt="fleche pour descendre"></a>
+                    <a href="#A_mon_propos"><img src="pictures/icons/fleche.png" alt="fleche pour descendre"></a>
                 </div>
                 
             </div>
@@ -67,12 +67,10 @@
                     </div>
     
                     <div id="texte"> 
-                        <p>Je m'appelle Inès El Ouali. J'ai 21 ans et 
-                        je suis étudiante en informatique en licence ..  à .
-    </br>Je suis une passionnée d'informatique, de jeux vidéos, de cinéma, de mangas et de voyages. 
-    </br>Ce que j'aime le plus dans l'informatique c'est le fait de pouvoir voir son idée prendre forme tout en résolvant pleins de petits problèmes.
-    </br>Pour moi, cela se conclue par une grande satisfaction.
-    </br>J'aimerais pouvoir être programmeuse informatique du coté back-end. Beaucoup de langages me plaisent.
+                        <p>Je m'appelle Inès El Ouali. J'ai 22 ans et je suis une passionnée d'informatique, de jeux vidéo, de cinéma, de mangas et de voyages. 
+                        <br/> Ce que j'aime le plus dans l'informatique c'est le fait de pouvoir voir son idée prendre forme tout en résolvant de petits problèmes.
+                            Le fait de se retrouver avec un projet achevé se termine par une grande satisfaction et un désir d'entreprendre autre chose.
+                        <br/> Ainsi, je souhaiterais devenir développeuse web avec une légère préférence pour le back-end. 
                         </p>
                     </div>
                     
@@ -92,61 +90,28 @@
                 <div class="soulignement"></div>
             </div>
 
-            <div id="div_competences">
-                <div class="langages_competence">
-                    <p>HTML</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "90"><p>90%</p></div>
+            <div class="containerComp">
+                <div id="div_competences">
+                    <div class="comp_langages">
+                        <img src="pictures/logo/html_logo.png" alt="Html">
+                        <img src="pictures/logo/css3_logo.png" alt="CSS3">
+                        <img src="pictures/logo/php.jpg" alt="PHP">
+                        <img src="pictures/logo/js.png" alt="Javascript">
+                        <img src="pictures/logo/mysql.png" alt="MySQL">
+                        <img src="pictures/logo/java.png" alt="java">
+                        <img src="pictures/logo/c.jpg" alt="c">
+                        <!-- <span>J'ai abordé quelques langages telles que Python, Unity(C#), MongoDB, Transact SQL, Android (Kotlin)</span> -->
                     </div>
-
-                </div>
-
-                <div class="langages_competence">
-                    <p>CSS</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "60"><p>60%</p></div>
+                    
+                    <div class="div_humour_competence">
+                        <p>Motivation</p>
+                        <div class="progress">
+                            <div class="progress-value" data-done= "100"><p>100%</p></div>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="langages_competence">
-                    <p>Javascript</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "40"><p>40%</p></div>
-                    </div>
-
-                </div>
-
-                <div class="langages_competence">
-                    <p>Java</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "60"><p>60%</p></div>
-                    </div>
-                </div>
-
-                <div class="langages_competence">
-                    <p>C</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "40"><p>40%</p></div>
-                    </div>
-
-                </div>
-
-                <div class="langages_competence">
-                    <p>PHP</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "70"><p>70%</p></div>
-                    </div>
-
-                </div>
-
-                <div class="langages_competence">
-                    <p>SQL</p>
-                    <div class="progress">
-                    <div class="progress-value" data-done= "30"><p>30%</p></div>
-                    </div>
-
-                </div>
+            </div>
+            
+                
             </div>
         </div>
         <!-- PORTFOLIO -->
@@ -156,63 +121,128 @@
                 <h2 class="titre" id= "titre_portfolio">Mon portfolio</h2>
                 <div class="soulignement blanc"></div>
             </div>
-            <p>Pour plus de renseignements, cliquez sur les différents projets effectués : </p>
-            <div id="liste_projets">
 
-                <div class="projets backgroundBlanc" data-modal = "modal1">
-                    <h3>Portfolio</h3>
-                    <img src="pictures/CaptureProjet1_small.png" alt="aperçu projet" class="img_projets" background-color="red">
-                </div>
+            <div class="containerProjets">
+                <p>Pour plus de renseignements, cliquez sur les différents projets effectués : </p>
+                <div id="liste_projets">
 
-                <div class="modal" id="modal1">
-                    <div class="modal_contenu backgroundGris">
-                        
-                        <div class="div_titre" >
-                            <h2 class="titre">Portfolio</h2>
-                            <div class="soulignement gris"></div>
-                        </div>
-                        <p class="texte">
-                            J'ai réalisé ce portfolio dans le but de présenter mes projets actuels et futurs. <br>
-                            Etant mon propre client, je voulais un design simple allant à l'essentiel. <br><br>
-                            <span class="souligner">Technologie utilisées</span>  : HTML, CSS, Javascript
-                        </p>
-                        <img src="pictures/CaptureProjet1.png" alt="" class="capture_projet">
-                        <p class="modal__close">&times;</p>
+                    <div class="projets backgroundBlanc" data-modal = "modal1">
+                        <h3>Portfolio</h3>
+                        <img src="pictures/captureProj/CaptureProjet1_small.png" alt="aperçu projet" class="img_projets">
                     </div>
-                </div>
 
-                <div class="projets backgroundBlanc" data-modal = "modal2">
-                    <h3>Blog : Noobies</h3>
-                    <p>En construction</p>
-                </div>
-
-                <div class="modal" id="modal2">
-                    <div class="modal_contenu backgroundGris">
-                        
-                        <div class="div_titre" >
-                            <h2 class="titre">Noobies</h2>
-                            <div class="soulignement gris"></div>
+                    <div class="modal" id="modal1">
+                        <div class="modal_contenu backgroundGris">
+                            
+                            <div class="div_titre" >
+                                <h2 class="titre">Portfolio</h2>
+                                <div class="soulignement linear_gris"></div>
+                            </div>
+                            <p class="texte">
+                                J'ai réalisé ce portfolio dans le but de présenter mes projets actuels et futurs. <br>
+                                Etant mon propre client, je voulais un design simple allant à l'essentiel. <br><br>
+                                <span class="souligner">Technologies utilisées</span>  : HTML, CSS, Javascript
+                            </p>
+                            <img src="pictures/captureProj/CaptureProjet1.png" alt="" class="capture_projet">
+                            <p class="modal__close">&times;</p>
                         </div>
-                        <p class="texte">
-                Ce projet a pour but de réunir différents joueurs dans une communauté, afin qu'ils partagent leur passion, leurs jeux ...
-                Sa réalisation est personnelle et est purement dans l'amusement personnel.
-                <span class="souligner">Technologie utilisées</span>  : HTML, CSS, PHP, Javascript, SQL
-            </p>
-            <p>
-                Image indisponible pour le moment. <br>
-                Projet en cours de réalisation.
-            </p>
-                        <p class="modal__close">&times;</p>
                     </div>
-                </div>
 
-                <a class="projets backgroundBlanc" href="view/portfolio.html">
-                    <h3>Petits projets rapides</h3>
-                    <p>Plusieurs projets</p>
-                </a>
+                    <div class="projets backgroundBlanc" data-modal = "modal2">
+                        <h3>Blog : Noobies</h3>
+                        <img src="pictures/captureProj/captureProjet_noobies_small.png" alt="aperçu projet" class="img_projets">
+                    </div>
+
+                    <div class="modal" id="modal2">
+                        <div class="modal_contenu backgroundGris">
+                            
+                            <div class="div_titre" >
+                                <h2 class="titre">Noobies</h2>
+                                <div class="soulignement linear_gris"></div>
+                            </div>
+                            <p class="texte">
+                                Ce projet a pour but de réunir différents joueurs dans une communauté, afin qu'ils partagent leur passion, leurs jeux ...
+                                Sa réalisation est personnelle et est purement de l'amusement personnel. <br><br>
+                                <span class="souligner">Technologies utilisées</span>  : HTML, CSS, PHP, Javascript, SQL
+                            </p>
+                            <img src="pictures/captureProj/captureProjet_noobies.png" alt="" class="capture_projet">
+                            <p class="modal__close">&times;</p>
+                        </div>
+                    </div>
+
+                    <div class="projets backgroundBlanc" data-modal = "modal3">
+                        <h3>Jeu sérieux : Urbalog</h3>
+                        <img src="pictures/captureProj/CaptureProjetUrbalog.png" alt="aperçu projet" class="img_projets">
+                    </div>
+
+                    <div class="modal" id="modal3">
+                        <div class="modal_contenu backgroundGris">
+                            
+                            <div class="div_titre" >
+                                <h2 class="titre">Urbalog</h2>
+                                <div class="soulignement linear_gris"></div>
+                            </div>
+                            <p class="texte">
+                                Ce projet est un jeu sérieux ayant pour but de mettre en évidence les difficultés d'aménagement  et d’accessibilité liées à l’urbanisation d’une ville.
+                                <span class="souligner">Technologies utilisées</span>  : Unity (C#), Mirror
+                            </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wqnELVCAOt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p class="modal__close">&times;</p>
+                        </div>
+                    </div>
+
+                    <div class="projets backgroundBlanc" data-modal = "modal4">
+                        <h3>Juste prix</h3>
+                        <img src="pictures/captureProj/captureProjet_justePrix_small.png" alt="aperçu projet" class="img_projets">
+                    </div>
+
+                    <div class="modal" id="modal4">
+                        <div class="modal_contenu backgroundGris">
+                            
+                            <div class="div_titre" >
+                                <h2 class="titre">Juste prix</h2>
+                                <div class="soulignement linear_gris"></div>
+                            </div>
+                            <p class="texte">
+                                Ce projet codé principalement en Javascript permet au joueur de deviner un nombre compris entre 1 et 1000. 
+                                Ce nombre est choisi aléatoirement par le programme.
+                                Ce projet a été réalisé en se formant personnellement sur la plateforme UDEMY, avec le formateur <a href="https://www.udemy.com/share/10282q3@yhqx5vcf4lJL9czDi5YMeIy5g2y2CgI5Ti2RXwO4qySlI6hM_8d3A7kkr3XvRNeGoA==/">Louis Nicolas Leuillet </a><br><br>
+                                <span class="souligner">Technologies utilisées</span>  : Html, css, js 
+                                
+                            </p>
+                            <img src="pictures/captureProj/captureProjet_justePrix.png" alt="" class="capture_projet">
+                            <p class="modal__close">&times;</p>
+                        </div>
+                    </div>
                 
+                    <div class="projets backgroundBlanc" data-modal = "modal5">
+                        <h3>Morpion</h3>
+                        <img src="pictures/captureProj/CaptureProjet_Morpion_small.PNG" alt="aperçu projet" class="img_projets">
+                    </div>
 
+                    <div class="modal" id="modal5">
+                        <div class="modal_contenu backgroundGris">
+                            
+                            <div class="div_titre" >
+                                <h2 class="titre">Morpion</h2>
+                                <div class="soulignement linear_gris"></div>
+                            </div>
+                            <p class="texte">
+                                Ce projet est un jeu réalisé personnellement. Il s'agit d'un petit morpion où deux joueurs puisse intéragir sur 
+                                le même périphérique. Un jour, ce projet évoluera pour passer en ligne. <br><br>
+                                <span class="souligner">Technologies utilisées</span>  : Html, css, js 
+                                
+                            </p>
+                            <img src="pictures/captureProj/CaptureProjet_Morpion.PNG" alt="" class="capture_projet">
+                            <p class="modal__close">&times;</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>J'ai réalisé d'autres projets personnels et scolaires que vous pouvez retrouver sur mon gitHub : <a href="https://github.com/EloualiInes">EloualiInes</a></p>
+                </div>
             </div>
+            
         </div>
 
         <!-- FOOTER CONTACT ! -->
@@ -223,18 +253,19 @@
                     <h2 class="titre" id= "titre_contact">Contact</h2>
                     <div class="soulignement"></div>
                 </div>
+                
                 <p>Vous pouvez me contacter via :</p>
                 <div class="container_button">
                     <div class="box box1">
-                        <img src="pictures/email.png" alt="logo email">
-                        <p><a href="mailto:ineselouali@sfr.fr">E-mail</a></p>
+                        <img src="pictures/icons/email.png" alt="logo email">
+                        <p><a href="mailto:iness240104@gmail.com">E-mail</a></p>
                     </div>
                     <div class="box box2">
-                        <img src="pictures/phone-call.png" alt="logo phone">
-                        <p><a href="tel:+33636468957"></a>Portable</a></p>
+                        <img src="pictures/icons/phone-call.png" alt="logo phone">
+                        <p><a href="tel:+33636468957">Portable</a></p>
                     </div>
                 </div>
-                
+                <img src="pictures/icons/mess_thx.png" alt="Thanks you">
             </div>
         </footer>
         <script src="javascript/app.js"></script>

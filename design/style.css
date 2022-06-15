@@ -1,3 +1,5 @@
+/* Général */
+
 *{
     box-sizing: border-box;
 }
@@ -19,6 +21,12 @@ h1{
     margin:0;
 }
 
+/* Chaque partie du site */
+.part{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
 .backgroundGris{
     background-color: #B3A1A1;
     color: white;
@@ -29,7 +37,6 @@ h1{
     color: #B3A1A1;
 }
 
-
 .div_titre{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -37,17 +44,11 @@ h1{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-
 }
 
 .titre{
     margin-top: 0;
     margin-bottom: 10px;
-}
-
-.part{
-    padding-top: 10vh;
-    padding-bottom: 5vh;
 }
 
 .soulignement{
@@ -58,13 +59,15 @@ h1{
     /* background-color: #736767; */
 }
 
-.gris{
+
+.linear_gris{
     background: linear-gradient(90deg,#FFE6E6,#736767,#FFE6E6);
 }
 
+/* Page de couverture */
+
 nav{
     position: relative;
-    
 }
 
 .container_navigation{
@@ -80,8 +83,6 @@ nav{
     align-items: center;
     background-color:#303030;
     opacity:0.9;
-    /* padding-top: 1em;
-    padding-bottom: 1em; */
     padding: 1em;
 
 }
@@ -111,26 +112,25 @@ nav{
     display:none;
 }
 
-/* .liste_nav{
-   
-} */
-
 .btn_nav{
     margin-left: 10px;
     margin-right: 10px;
-    background-color: #3D373D;
     padding: 10px;
     font-size: 1.3em;
     text-decoration: none;
     color: white;
-
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .btn_nav:visited{
     color: white;
 }
 
-/* Couverture */
+.btn_nav:hover{
+    color:#B3A1A1;
+    text-decoration: underline solid #B3A1A1;
+}
 
 .cover{
     height: 100vh;
@@ -170,14 +170,54 @@ nav{
     
 }
 
-/* Présentation */
+/* A mon propos */
 
 #A_mon_propos{
 	display: flex;
     width: 100%;
+    height: 100vh;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
+}
+
+#A_mon_propos > .div_titre{
+    flex:1;
+
+}
+
+#A_mon_propos > .container_presentation{
+    flex: 4;
+}
+
+.container_presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#presentation_complete{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+#texte{
+    font-size: 1.2em;
+    margin-left: 16px;
+}
+
+#photo-moi{
+	height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 #btnCV{
@@ -195,52 +235,42 @@ nav{
     
 }
 
-.container_presentation{
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#presentation_complete{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 1em;
-}
-
-#texte{
-    font-size: 1.2em;
-    margin-left: 16px;
-}
-
-#photo-moi{
-	height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center top;
-}
-
-/* Competence */
+/* Compétences */
 #competences{
 	display: flex;
+    width: 100%;
+    height: 75vh;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 }
 
+#competences .containerComp{
+    margin-top: 2em;
+}
+
 #div_competences{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.comp_langages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.langages_competence{
+.comp_langages > * {
+    margin-right: 1em;
+}
+
+.div_humour_competence{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -249,7 +279,7 @@ nav{
 	padding: 1em;
 }
 
-.langages_competence > p {
+.div_humour_competence > p {
 	font-size: 1.2em;
 	margin-right: 1em;
 	margin-left: 1em;
@@ -263,7 +293,6 @@ nav{
 	align-items: center;
 	background:rgba(255,255,255,0.1);
 	border-radius: 100px;
-    /* rendre responsive le width */
 	width: 90%;
 	height: 30px;
 	box-shadow: 0 10px 40px -10px black;
@@ -288,16 +317,23 @@ nav{
 }
 
 
-/* PORTFOLIO */
+/* Portfolio */
 
 #Portfolio{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
     align-items: center;
 	width: 100%;
     margin-bottom: 10px;
 
+}
+
+.containerProjets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #liste_projets{
@@ -308,6 +344,7 @@ nav{
     flex-wrap: wrap;
     padding-top: 30px;
     padding-bottom: 20px;
+    
 }
 
 .projets{
@@ -319,11 +356,16 @@ nav{
 	border-radius: 1em;
     text-decoration: none;
     cursor: pointer;
+    width: 300px;
+    height: 250px;
+    margin: 0 0.5em 1em 0.5em;
 }
 
 .projets:hover{
     box-shadow: 10px 10px 20px #BF7373;
 }
+
+
 
 .modal{
     visibility: hidden;
@@ -638,7 +680,7 @@ footer{
         justify-content: center;
     }
 
-    .langages_competence{
+    .div_humour_competence{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -661,7 +703,7 @@ footer{
         font-size:  1.2em;
     }
 
-    .langages_competence{
+    .div_humour_competence{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -672,6 +714,12 @@ footer{
 
     .texte{
         font-size:0.8em;
+    }
+
+    .comp_langages img{
+        height: 50px;
+        width: auto;
+        object-fit: cover;
     }
 }
 

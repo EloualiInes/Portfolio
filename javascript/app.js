@@ -17,8 +17,7 @@ let elt = document.getElementById('competences');
 function detecterPositionElt(){
         var positions = elementPosition(elt);
         positionElt = positions.viewportY;
-        console.log("Hauteur body : " + document.body.scrollHeight);
-        if(positionElt < heightElt * 3/4){
+        if(positionElt <= heightElt){
             barre_progression();
             window.removeEventListener("scroll",detecterPositionElt);
         }
