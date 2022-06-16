@@ -175,11 +175,11 @@ nav{
 #A_mon_propos{
 	display: flex;
     width: 100%;
-    height: 100vh;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 }
+
 
 #A_mon_propos > .div_titre{
     flex:1;
@@ -441,6 +441,10 @@ nav{
     box-shadow: 5px 5px 10px #BF7373;
 }
 
+#Portfolio .lienGithub p {
+   text-align: center;
+}
+
 /* CONTACT */
 
 footer{
@@ -689,7 +693,9 @@ footer{
         padding: 1em;
     }
 
-    
+    #A_mon_propos #texte{
+        font-size: 1.1em;
+    }
     
 }
 /* Petits écrans */
@@ -712,12 +718,12 @@ footer{
         padding: 1em;
     }
 
-    .texte{
+    #A_mon_propos #texte{
         font-size:0.8em;
     }
 
     .comp_langages img{
-        height: 50px;
+        height: 30px;
         width: auto;
         object-fit: cover;
     }
@@ -754,5 +760,10 @@ footer{
 
     .box p{
         display:none;
+    }
+    .comp_langages img{
+        height: 30px;
+        width: auto;
+        object-fit: cover;
     }
 }
