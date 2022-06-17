@@ -567,7 +567,7 @@ footer{
 
 
 /* Mobile / tablette */
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1024px){
 
     #navigation{
         display: none;
@@ -688,6 +688,12 @@ footer{
         align-items: center;
         width: 85vw;
         padding: 1em;
+    }
+
+    .comp_langages img{
+        height: 50px;
+        width: auto;
+        object-fit: cover;
     }
 
     #A_mon_propos #texte{
