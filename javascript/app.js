@@ -1,4 +1,26 @@
-// MENU
+// ------ Var globales : ---- 
+// Les différentes parties
+let accueil = document.querySelector("#Accueil");
+let a_propos = document.querySelector("#A_mon_propos");
+let competences = document.querySelector("#competences");
+let portfolio = document.querySelector("#Portfolio");
+let contact = document.querySelector("#contact");
+
+// position de chaque partie
+let posAccueil = elementPosition(accueil).viewportY;
+let posAPropos = elementPosition(a_propos).viewportY;
+let posPortfolio = elementPosition(portfolio).viewportY;
+let posCompetences = elementPosition(competences).viewportY;
+let posContact = elementPosition(contact).viewportY;
+
+// les liens pour y accéder
+let lien_accueil = document.querySelector(".lienAccueil");
+let lien_a_propos = document.querySelector(".lienA_mon_propos");
+let lien_competences = document.querySelector(".lienCompetences");
+let lien_portfolio = document.querySelector(".lienPortfolio");
+let lien_contact = document.querySelector(".lienContact");
+
+// -------------------- MENU -----------------------
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.navigationMobile');
 
@@ -7,19 +29,62 @@ burger.addEventListener("click",()=>{
     menu.classList.toggle('menuShow');
 });
 
-// BARRE DE PROGRESSION
-let elt = document.getElementById('competences');
-    let heightElt = elt.scrollHeight;
-    window.onload = () => {
-        window.addEventListener("scroll", detecterPositionElt);
-    }
 
+//  ------------ Defilement vers une partie -------------------
+lien_accueil.addEventListener("click", () => {
+    window.scrollTo({
+        top:posAccueil,
+        left:0,
+        behavior:"smooth"
+    });
+});
+
+
+lien_a_propos.addEventListener("click", () => {
+    window.scrollTo({
+        top:posAPropos,
+        left:0,
+        behavior:"smooth"
+    });
+});
+
+lien_competences.addEventListener("click", () => {
+    window.scrollTo({
+        top:posCompetences,
+        left:0,
+        behavior:"smooth"
+    });
+});
+
+// nbClickLienPortfolio = 0;
+lien_portfolio.addEventListener("click", () => {
+    // if(nbClickLienPortfolio == 0){
+        window.scrollTo({
+            top:posPortfolio,
+            left:0,
+            behavior:"smooth"
+        });
+});
+
+
+
+lien_contact.addEventListener("click", () => {
+    window.scrollTo({
+        top:posContact,
+        left:0,
+        behavior:"smooth"
+    });
+});
+
+// -------------- BARRE DE PROGRESSION ------------------ 
+
+window.addEventListener("scroll", detecterPositionElt);
 function detecterPositionElt(){
-        var positions = elementPosition(elt);
-        positionElt = positions.viewportY;
-        if(positionElt <= heightElt){
+        positionCouranteP = elementPosition(portfolio).viewportY;
+        // positionCouranteC = elementPosition(contact).viewportY;
+        if(positionCouranteP <= posPortfolio ){
             barre_progression();
-            window.removeEventListener("scroll",detecterPositionElt);
+            window.removeEventListener("scroll", detecterPositionElt);
         }
 }
 
@@ -71,7 +136,7 @@ modal__close.forEach(function(btn){
     });
 });
 
-// BOUTONS CONTACT
+// ---------------------- BOUTONS CONTACT -------------------------
 const btn1 = document.querySelector('.box1');
 const btn2 = document.querySelector('.box2');
 
