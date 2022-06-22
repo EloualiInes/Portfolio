@@ -9,6 +9,7 @@ body{
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:white;
+    text-shadow: 5px 2px 5px #303030;
     font-size: 1em;
 }
 
@@ -129,6 +130,7 @@ nav{
 .btn_nav:hover{
     color:#B3A1A1;
     text-decoration: underline solid #B3A1A1;
+    cursor: pointer;
 }
 
 .cover{
@@ -146,27 +148,36 @@ nav{
 }
 
 .container_titres{
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
+    border-width: 4px 0;
+    
+    
+    
 }
 .container_titres h1{
-    font-size:  3.5em;
-    text-transform: uppercase;
+    font-size: 3.5em;
+    text-shadow: 5px 2px 5px #303030
 }
 
-.container_titres h2{
-    font-size: 1.5em;
-    font-weight: normal;
-    text-transform: uppercase;
-}
+
 
 .center{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: center;
-    
+    align-items: flex-start;
+
 }
 
 /* A mon propos */
@@ -242,6 +253,7 @@ nav{
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+    text-shadow: 0px 0px 0px white
 }
 
 #competences .containerComp{
@@ -358,6 +370,7 @@ nav{
     width: 300px;
     height: 250px;
     margin: 0 0.5em 1em 0.5em;
+    text-shadow: 0 0 0 white;
 }
 
 .projets:hover{
@@ -405,6 +418,8 @@ nav{
     padding-bottom: 0.5em;
     width: 60%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 15px 10px 5px rgb(51,47,46);
 }
 
 .modal__close{
@@ -444,6 +459,8 @@ nav{
    text-align: center;
 }
 
+
+
 /* CONTACT */
 
 footer{
@@ -451,6 +468,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #contact{
@@ -459,6 +477,7 @@ footer{
     justify-content:center;
     align-items: center;
     border: 3px solid #B3A1A1;
+    text-shadow: 0 0 0 white;
     border-radius: 10px;
 }
 
@@ -513,6 +532,8 @@ footer{
     .texte{
         font-size:1.2em;
     }
+
+    
 }
 
 /* Très grand écran */
@@ -522,12 +543,8 @@ footer{
         font-size:1.2em;
     }
 
-    .titre, .container_titres h2{
-        font-size:1.5em;
-    }
-
     .container_titres h1{
-        font-size:  3.5em;
+        font-size:  2.5em;
     }
 
     .logo{
@@ -595,7 +612,6 @@ footer{
     }
 
     .navigationMobile .btn_nav{
-        /* padding:5px; */
         background-color: transparent;
         padding: 10px;
     }
@@ -663,12 +679,9 @@ footer{
     }
 
     .container_titres h1{
-        font-size:  2.5em;
+        font-size:  2em;
     }
 
-    .container_titres h2{
-        font-size:  1.4em;
-    }
 
     #presentation_complete{
         flex-direction: column;
@@ -699,18 +712,20 @@ footer{
     #A_mon_propos #texte{
         font-size: 1.1em;
     }
+
+    #videoUrbalog{
+        width: 280px;
+        height: 158px;
+    }
     
 }
 /* Petits écrans */
 
 @media only screen and (max-width:600px){
     .container_titres h1{
-        font-size:  2em;
+        font-size:  1.5em;
     }
 
-    .container_titres h2{
-        font-size:  1.2em;
-    }
 
     .div_humour_competence{
         display: flex;
@@ -729,6 +744,11 @@ footer{
         height: 30px;
         width: auto;
         object-fit: cover;
+    }
+
+    #videoUrbalog{
+        width: 130px;
+        height: 79px;
     }
 }
 

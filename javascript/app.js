@@ -56,9 +56,8 @@ lien_competences.addEventListener("click", () => {
     });
 });
 
-// nbClickLienPortfolio = 0;
+
 lien_portfolio.addEventListener("click", () => {
-    // if(nbClickLienPortfolio == 0){
         window.scrollTo({
             top:posPortfolio,
             left:0,
@@ -76,12 +75,34 @@ lien_contact.addEventListener("click", () => {
     });
 });
 
+// ------------- Animation écriture des titres couvertures ------
+const titre_mon_nom = document.querySelector(".container_titres h1");
+new Typewriter(titre_mon_nom, {
+    deleteSpeed: 20
+})
+.changeDelay(20)
+.typeString("Inès El Ouali")
+.pauseFor(300)
+.typeString("<br><strong> Développeuse full-stack</strong> !")
+.pauseFor(1000)
+.deleteChars(12)
+.typeString('<span style="color:#A7D6C1"> CSS</span> !')
+.pauseFor(1000)
+.deleteChars(5)
+.typeString('<span style= "color:#F0C873"> PHP</span> !')
+.pauseFor(1000)
+.deleteChars(5)
+.typeString('<span style="color:#ff6910">Javascript</span> !')
+.pauseFor(1000)
+.deleteChars(12)
+.typeString("full-stack !")
+.start();
+
 // -------------- BARRE DE PROGRESSION ------------------ 
 
 window.addEventListener("scroll", detecterPositionElt);
 function detecterPositionElt(){
         positionCouranteP = elementPosition(portfolio).viewportY;
-        // positionCouranteC = elementPosition(contact).viewportY;
         if(positionCouranteP <= posPortfolio ){
             barre_progression();
             window.removeEventListener("scroll", detecterPositionElt);
@@ -159,3 +180,4 @@ btn2.addEventListener('mouseleave', () => {
 
     btn1.classList.remove('flou');
 });
+
