@@ -27,6 +27,8 @@ const menu = document.querySelector('.navigationMobile');
 burger.addEventListener("click",()=>{
     burger.classList.toggle('active');
     menu.classList.toggle('menuShow');
+    //toggle
+    document.querySelector(".container_titres h1").classList.toggle("cacher");
 });
 
 
